@@ -20,5 +20,22 @@ namespace Tests
 
             CollectionAssert.AreEqual(expected, output);
         }
+
+        [Test]
+        public void Modulo3FilterNegVal()
+        {
+            int[] input = {0, -7, -9999999, -1234567};
+            int[] output = Modulo3Filter.moduloInput(input);
+            int[] expected = {0, 2, 0, 2};
+
+            foreach (var o in output)
+            {
+                Debug.Log(o);
+            }
+
+            CollectionAssert.AreEqual(expected, output);
+        }
     }
+
+
 }

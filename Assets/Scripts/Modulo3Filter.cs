@@ -7,7 +7,7 @@ public class Modulo3Filter : MonoBehaviour
 {
    public static int modulo3(int x)
     {
-        return x % 3;
+        return ((x % 3) + 3) % 3;
     }
 
     public static int[] moduloInput(int[] xs)
